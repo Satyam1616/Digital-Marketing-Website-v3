@@ -1,0 +1,84 @@
+/* Home.module.css */
+
+/* Section Styling */
+section {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.services, .testimonials, .cta {
+  background-color: #f9f9f9;
+}
+
+.service-cards, .testimonial-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Call to Action Styling */
+.cta {
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+}
+
+/* Service Card Styling */
+.service-cards .service-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius);
+  transition: transform 0.3s ease;
+}
+
+.service-cards .service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-cards .service-card .icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+.testimonial-cards .testimonial-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-cards .testimonial-card:hover {
+  transform: scale(1.05);
+}
+
+.testimonial-cards .testimonial-card p {
+  font-style: italic;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .service-cards,
+  .testimonial-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,153 @@
+/* App.css */
+
+/* Global Styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+header, footer {
+  background-color: #007bff; /* Primary Blue */
+  color: white;
+  padding: 1rem;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* Main content area */
+main {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Container for pages */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Heading Styles */
+h1, h2, h3 {
+  color: #007bff;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Section padding */
+section {
+  padding: 4rem 0;
+}
+
+/* Button Styles */
+button, .button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .button:hover {
+  background-color: #0056b3; /* Hover effect */
+}
+
+button:focus, .button:focus {
+  outline: none;
+}
+
+/* Card Styles (for service, portfolio, testimonials) */
+.card {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.card img {
+  border-radius: 50%;
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  margin: 1rem 0;
+  color: #007bff;
+  font-size: 1.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  section {
+    padding: 2rem 0;
+  }
+
+  header {
+    padding: 1rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}

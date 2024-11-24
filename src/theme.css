@@ -1,0 +1,152 @@
+/* theme.css */
+
+/* Define the primary and secondary color palette */
+:root {
+  --primary-color: #007bff; /* Blue for main accents */
+  --secondary-color: #28a745; /* Green for call-to-action */
+  --tertiary-color: #f8f9fa; /* Light background for sections */
+  --text-color: #333; /* Dark text color for better readability */
+  --light-text-color: #555; /* Lighter text for secondary information */
+  --button-hover-color: #0056b3; /* Hover effect for buttons */
+  --border-radius: 8px; /* General border radius */
+  --font-family-primary: 'Helvetica Neue', Arial, sans-serif; /* Primary font */
+  --font-family-secondary: 'Georgia', serif; /* Secondary font */
+  --max-width: 1200px; /* Maximum content width */
+}
+
+/* Global body styling */
+body {
+  font-family: var(--font-family-primary);
+  background-color: var(--tertiary-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* General container for centering content */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Global heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-secondary);
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+/* Links styling */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--button-hover-color);
+}
+
+/* Button styling */
+button,
+a.button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+button:hover,
+a.button:hover {
+  background-color: var(--button-hover-color);
+}
+
+/* Card styling (used for services, testimonials, etc.) */
+.card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.card img {
+  border-radius: 50%;
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.card p {
+  color: var(--light-text-color);
+  font-size: 1rem;
+}
+
+/* Section styling */
+section {
+  padding: 4rem 0;
+  background-color: #fff;
+  margin-bottom: 2rem;
+}
+
+section:nth-child(odd) {
+  background-color: var(--tertiary-color);
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+/* Footer styling */
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--secondary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .card {
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+
+  section {
+    padding: 2rem 0;
+  }
+}

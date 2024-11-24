@@ -1,0 +1,85 @@
+/* Footer.module.css */
+
+/* General Footer Styling */
+.footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section Styles */
+.section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.heading {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.about {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Link Styles */
+.linkList {
+  list-style: none;
+  padding: 0;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: var(--background-color);
+}
+
+/* Contact & Social Media */
+.socialMedia {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.icon {
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: var(--background-color);
+}
+
+/* Bottom Bar */
+.bottomBar {
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
